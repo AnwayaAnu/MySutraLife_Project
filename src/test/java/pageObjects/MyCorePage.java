@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,11 +44,13 @@ public class MyCorePage extends BasePage
 	
 	public void clickPRofileArrow()
 	{
-		btn_profileArrow.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", btn_profileArrow);
 	}
 	
 	public void clickLogout()
 	{
-		btn_logout.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", btn_logout);
 	}
 }

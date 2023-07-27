@@ -25,12 +25,19 @@ public class LoginPage extends BasePage
 	
 	
 	// Actions
-	
+	public void clearUsername()
+	{
+		txt_username.clear();
+	}
 	public void setUsername(String uname)
 	{
 		txt_username.sendKeys(uname);
 	}
 	
+	public void clearPassword()
+	{
+		txt_password.clear();
+	}
 	public void setPassword(String pw)
 	{
 		txt_password.sendKeys(pw);

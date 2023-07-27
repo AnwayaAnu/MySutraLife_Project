@@ -8,7 +8,7 @@
   
     <classes>
     
-      <class name="testCases.TC_002_LoginDatadrivenTest"/>
+      <class name="testCases.TC_002_datadrivenLoginTest"/>
       
     </classes>
     

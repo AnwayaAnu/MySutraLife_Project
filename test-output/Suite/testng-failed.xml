@@ -4,13 +4,13 @@
   <test thread-count="5" name="Firefox Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testCases.TC_002_LoginDatadrivenTest">
+      <class name="testCases.TC_002_datadrivenLoginTest">
         <methods>
           <include name="tearDown"/>
+          <include name="LoginTest" invocation-numbers="1 2"/>
           <include name="setUp"/>
-          <include name="loginDataDriven"/>
         </methods>
-      </class> <!-- testCases.TC_002_LoginDatadrivenTest -->
+      </class> <!-- testCases.TC_002_datadrivenLoginTest -->
     </classes>
   </test> <!-- Firefox Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
